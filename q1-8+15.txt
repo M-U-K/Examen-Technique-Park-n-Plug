@@ -1,0 +1,47 @@
+Question 1
+Le fonction string.split() divise la string en tableau de chaîne de caractère en fonction de ce qu'on rentre en argument par exemple
+Si string = "j'aime le JavaScript" console.log(string.split(' ')[0]) on aura "j'aime", car cela aura coupé la string chaque fois qu'elle detect un espace.
+
+Question 2
+La scope est ce que voit l'interpréteur quand il exécute du code par exemple
+Lorsqu'il rentre dans une fonction, il ne voit que les variables déclarées dans celle-ci et les variables globales.
+Lorsque on appelle une variable, il la cherche dans le scope en js si elle ne l'est pas, il peut remonter d'un scope jusqu'à trouver sa déclaration.
+
+Question 3
+Les mots-clés "async" et "await" permettent de rendre la fonction asynchrone, l'utilisation d'un async devant une fonction la force a renvoyer une promise
+Lorsque la fonction sera résolue et les mots await permettent d'attendre la résolution d'une promise
+
+Question 4
+Une fonction callback c'est simplement une fonction mise en argument dans une autre fonction et qui pourra être appelé dans celle-ci
+
+Question 5
+Pour connaître le type d'une variable, on utilise "typeof" la fonction return une string du type de variable.
+
+Question 6
+AngularJS est un framwork JavaScript utilisé pour les projets web ayant une architecture MVC comme le framework symphony.
+Un projet angularjs est composé de modules dont un principale chaque module peux contenir des éléments web.
+Dépendre d'un autre module il y a aussi le package.json ou on retrouve toutes les dépendances du projet installé dans node_modules
+
+Question 7
+Une directive ça permet d'ajouter des conditions dans des balises, c'est une sorte de modification de la balise
+Par exemple la directive la plus simple ngIf permet d'afficher la balise si une condition est vérifié et ça peux être une fonction
+Exemple: <p *ngif="condition">chose a afficher</p>
+
+Question 8
+l'injection de dépendance en angularJS est un design paterne ça permet à un objet d'avoir accès à d'autres objets dont il depend sans avoir à les créer lui-même
+Ceci grâce a un "injecteur" qui est un autre composant en angularJS
+Ça permet simplement de fournir toutes les dépendances nécessaires lors du passage en argument.
+Exemple:
+
+Un service
+app.service('userService', function() {
+});
+
+Et l'injecter dans un autre composant ici un contrôler
+app.controller('userController', function($scope, userService) {
+});
+
+Toutes les dépendances seront aussi injectées dans le composant userController
+
+Question 15
+J'aimerais pouvoir voler pour aller n'importe où, et pouvoir voyager quand je veux.
